@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a0109.sneha.fedcash.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/year_ET"
+        android:hint="Enter a year between 2006 and 2016"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/month_ET"
+        android:hint="Enter a month between 1 and 12"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_ET"
+        android:hint="Enter a day between 1 and 30"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_ET"
+        android:hint="Enter a day between 5 and 25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bind"
+            android:id="@+id/bind"
+            />
+        <Button
+            android:id="@+id/moncash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MonthlyCash" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DailyCash"
+            android:id="@+id/dailycash" />
+
+        <Button
+            android:id="@+id/yearlyaverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YearlyAverage"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="RESULT WILL BE HERE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text"/>
+
+</LinearLayout>
